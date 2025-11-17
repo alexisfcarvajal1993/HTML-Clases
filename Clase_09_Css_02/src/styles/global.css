@@ -1,0 +1,98 @@
+/*
+    DIMENSIONES
+
+    ABSOLUTAS --> px (pixeles)
+
+    RELATIVAS --> %
+              --> viewport (ancho: ViewWidth, alto: ViewHight)
+              --> rem
+              --> em
+*/
+
+/* div {
+    background-color: orange;
+}
+
+span {
+    background-color: greenyellow;
+} */
+
+/********** PORCENTUALES ********/
+
+/* .padre {
+    background-color: orange;
+    width: 400px;
+    height: 400px;
+}
+
+.hijo {
+    background-color: aqua;
+    width: 25%;
+    height: 25%;
+} */
+/* 
+
+/* Selector universal */
+/* * {
+    margin: 0;
+} */
+
+
+/* .uno {
+    background-color: blueviolet;
+    width: 100%;
+    height: 50vh;
+}
+
+.dos {
+    background-color: orange;
+    width: 100%;
+    height: 50vh;
+}   */ 
+
+
+
+/********  REM Y EM  ***********/
+
+/*Los REM son una mecanica de referencia global*/
+
+html {
+    font-size: 20px;  /* 1 REM --> 16px */  
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+
+/*
+    Los EM son una mecanica de referencia local
+    Dependen de la medida de fuente del container padre
+    Esa medida solo rige dentro del container padre
+    */
+
+.rebelde {
+    font-size: 12px ; /* 1 EM --> 12px  */
+}
+.rebelde h1 {
+    font-size: 2em;
+}
+.rebelde h2 {
+    font-size: 1.75em;
+}
+.rebelde h3 {
+    font-size: 1.5em;
+}
+.rebelde h4 {
+    font-size: 1.25em;
+}
